@@ -11,16 +11,6 @@ void Person::Swap(Person& tmp) noexcept {
     swap(m_age,tmp.m_age);
     swap(m_name,tmp.m_name);
 }
-// void Person::CleanUp() noexcept
-// {
-//     m_age = 0;
-//     m_name = {""};
-// }
-// void Person::MoveFrom(Person& tf) noexcept
-// {
-//     m_age = std::exchange(tf.m_age, 0);
-//     m_name = std::move(tf.m_name);
-// }
 Person& Person::operator=(const Person& tmp)
 {
     Person tmp2{tmp};
